@@ -1,0 +1,14 @@
+.add{
+    width:"50";
+    height:"50";
+    position: absolute;
+}
+.remove{
+    width:"50";
+    height:"50";
+    
+}
+.card{
+    
+    z-index: 1;
+}

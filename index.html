@@ -8,12 +8,20 @@
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
 
-  <!--<link rel="stylesheet" href="styles.css?v=1.0">-->
+  <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 <script src="script.js"></script>
-  <img  name="catOne" widt="400" height="200" onclick="changeImg()">
+<div class="card">
+  <img  name="catOne" width="400" height="200" >
+  <div class="minus">
+    <img   src="assets/icons/minus.png" onclick="skipSub()">
+  </div>
+  <div class="plus">
+    <img   src="assets/icons/plus.png" onclick="addSub()" >
+  </div>
+</div>
 </body>
 </html>
