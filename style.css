@@ -1,14 +1,36 @@
-.add{
+.plus{
     width:"50";
     height:"50";
-    position: absolute;
+  
+    
+    position: relative;
+   
+    top:130px;
+    left: 230px;
+  z-index: 2;
 }
-.remove{
+.minus{
     width:"50";
     height:"50";
+
+    top:130px;
+    left: 30px;
+  z-index: 2;
+  position: relative;
     
 }
 .card{
     
-    z-index: 1;
+    position: absolute;
+  top: 0px;
+  left: 0px;
+    z-index: 1; 
 }
+.container{
+    height: 200px;
+    width: 400px;
+}
+body{
+   
+    margin:0px;
+    }
