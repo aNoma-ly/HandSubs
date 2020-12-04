@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 04, 2020 at 03:18 PM
+-- Generation Time: Dec 04, 2020 at 08:35 PM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.1.33
 
@@ -37,6 +37,7 @@ CREATE TABLE `subscriptions` (
   `Expired_date` date NOT NULL,
   `Status` varchar(225) NOT NULL,
   `total_download` int(55) NOT NULL,
+  `Category_type` varchar(88) NOT NULL,
   `img_dir` blob NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -44,10 +45,11 @@ CREATE TABLE `subscriptions` (
 -- Dumping data for table `subscriptions`
 --
 
-INSERT INTO `subscriptions` (`id`, `Subscription_name`, `Billing_cycle`, `Price`, `Start_date`, `Expired_date`, `Status`, `total_download`, `img_dir`) VALUES
-(1, 'Melon', 'Monthly', '10.00', '2020-01-05', '2021-03-04', 'Active', 0, ''),
-(2, 'Netflex', 'Monthly', '10.00', '2020-01-01', '2020-03-12', 'Active', 0, ''),
-(3, 'Spotify', 'Monthly', '15.00', '2020-01-01', '2020-11-12', 'Active', 0, '');
+INSERT INTO `subscriptions` (`id`, `Subscription_name`, `Billing_cycle`, `Price`, `Start_date`, `Expired_date`, `Status`, `total_download`, `Category_type`, `img_dir`) VALUES
+(1, 'Melon', 'Monthly', '10.00', '2020-01-05', '2021-03-04', 'Active', 0, '', ''),
+(2, 'Netflex', 'Monthly', '10.00', '2020-01-01', '2020-03-12', 'Active', 0, '', ''),
+(3, 'Spotify', 'Monthly', '15.00', '2020-01-01', '2020-11-12', 'Active', 0, '', ''),
+(4, 'Eir', 'Yearly', '20.00', '2020-12-01', '2021-12-12', 'Active', 0, '', '');
 
 --
 -- Indexes for dumped tables
@@ -67,7 +69,7 @@ ALTER TABLE `subscriptions`
 -- AUTO_INCREMENT for table `subscriptions`
 --
 ALTER TABLE `subscriptions`
-  MODIFY `id` int(55) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(55) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
