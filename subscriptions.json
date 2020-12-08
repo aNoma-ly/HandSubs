@@ -4,7 +4,7 @@
     "downloads":10000
 },
 
-{ "name":"Amazon", 
+{ "name":"AmazonPrime", 
  "img":"assets/images/amazon_prime.jpg", 
  "downloads":20000},
 
