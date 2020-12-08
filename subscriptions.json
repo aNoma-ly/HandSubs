@@ -1,4 +1,4 @@
-{{
+[{
     "name":"Spotify", 
     "img":"assets/images/spotify.png", 
     "downloads":10000
@@ -11,4 +11,4 @@
                 { "name":"Youtube", 
                  "img":"assets/images/youtube_premium.png", 
                  "downloads":300000}
-}
+]
