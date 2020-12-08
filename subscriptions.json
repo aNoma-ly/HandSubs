@@ -3,3 +3,11 @@
     "img":"assets/images/spotify.png", 
     "downloads":10000
 }
+
+{ "name":"Amazon", 
+ "img":"assets/images/amazon_prime.jpg", 
+ "downloads":20000},
+
+                { "name":"Youtube", 
+                 "img":"assets/images/youtube_premium.png", 
+                 "downloads":300000}
