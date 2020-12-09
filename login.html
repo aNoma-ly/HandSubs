@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Login</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+		<link href="style1.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<body id="page-top">
+			<!-- Navigation-->
+			<nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+				<div class="container">
+					<a class="navbar-brand js-scroll-trigger" href="index.html">HandSubs</a>
+					<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+					<div class="collapse navbar-collapse" id="navbarResponsive">
+						<ul class="navbar-nav ml-auto my-2 my-lg-0">
+							<li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">Home</a></li>
+							<li class="nav-item"><a class="nav-link js-scroll-trigger" href="login.html">Login</a></li>
+							<li class="nav-item"><a class="nav-link js-scroll-trigger" href="register.html">Register</a></li>
+							<li class="nav-item"><a class="nav-link js-scroll-trigger" href="budgettest.html">Budget Calculator</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		<div class="login">
+			<h1>Login</h1>
+			<form action="authenticate.php" method="post">
+				<label for="username">
+					<i class="fas fa-user"></i>
+				</label>
+				<input type="text" name="username" placeholder="Username" id="username" required>
+				<label for="password">
+					<i class="fas fa-lock"></i>
+				</label>
+				<input type="password" name="password" placeholder="Password" id="password" required>
+				<input type="submit" value="Login">
+			</form>
+		</div>
+	</body>
+</html>
